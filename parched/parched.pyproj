@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>c8da3ad0-333b-4334-a714-2cc808122ca3</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin\dev_appserver.py</StartupFile>
+    <SearchPath>env\lib\</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>parched</Name>
+    <RootNamespace>parched</RootNamespace>
+    <InterpreterId>
+    </InterpreterId>
+    <InterpreterVersion>
+    </InterpreterVersion>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>--python_startup_script=".\pydevd_startup.py" --automatic_restart=no --max_module_instances="default:1" ".\app.yaml"</CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+    <IsWindowsApplication>False</IsWindowsApplication>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="appengine_config.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="application\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="application\views.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="application\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lib\click\core.py" />
+    <Compile Include="lib\click\decorators.py" />
+    <Compile Include="lib\click\exceptions.py" />
+    <Compile Include="lib\click\formatting.py" />
+    <Compile Include="lib\click\globals.py" />
+    <Compile Include="lib\click\parser.py" />
+    <Compile Include="lib\click\termui.py" />
+    <Compile Include="lib\click\testing.py" />
+    <Compile Include="lib\click\types.py" />
+    <Compile Include="lib\click\utils.py" />
+    <Compile Include="lib\click\_bashcomplete.py" />
+    <Compile Include="lib\click\_compat.py" />
+    <Compile Include="lib\click\_termui_impl.py" />
+    <Compile Include="lib\click\_textwrap.py" />
+    <Compile Include="lib\click\_unicodefun.py" />
+    <Compile Include="lib\click\_winconsole.py" />
+    <Compile Include="lib\click\__init__.py" />
+    <Compile Include="lib\flask\app.py" />
+    <Compile Include="lib\flask\blueprints.py" />
+    <Compile Include="lib\flask\cli.py" />
+    <Compile Include="lib\flask\config.py" />
+    <Compile Include="lib\flask\ctx.py" />
+    <Compile Include="lib\flask\debughelpers.py" />
+    <Compile Include="lib\flask\exthook.py" />
+    <Compile Include="lib\flask\ext\__init__.py" />
+    <Compile Include="lib\flask\globals.py" />
+    <Compile Include="lib\flask\helpers.py" />
+    <Compile Include="lib\flask\json.py" />
+    <Compile Include="lib\flask\logging.py" />
+    <Compile Include="lib\flask\sessions.py" />
+    <Compile Include="lib\flask\signals.py" />
+    <Compile Include="lib\flask\templating.py" />
+    <Compile Include="lib\flask\testing.py" />
+    <Compile Include="lib\flask\views.py" />
+    <Compile Include="lib\flask\wrappers.py" />
+    <Compile Include="lib\flask\_compat.py" />
+    <Compile Include="lib\flask\__init__.py" />
+    <Compile Include="lib\flask\__main__.py" />
+    <Compile Include="lib\itsdangerous.py" />
+    <Compile Include="lib\werkzeug\contrib\atom.py" />
+    <Compile Include="lib\werkzeug\contrib\cache.py" />
+    <Compile Include="lib\werkzeug\contrib\fixers.py" />
+    <Compile Include="lib\werkzeug\contrib\iterio.py" />
+    <Compile Include="lib\werkzeug\contrib\jsrouting.py" />
+    <Compile Include="lib\werkzeug\contrib\limiter.py" />
+    <Compile Include="lib\werkzeug\contrib\lint.py" />
+    <Compile Include="lib\werkzeug\contrib\profiler.py" />
+    <Compile Include="lib\werkzeug\contrib\securecookie.py" />
+    <Compile Include="lib\werkzeug\contrib\sessions.py" />
+    <Compile Include="lib\werkzeug\contrib\testtools.py" />
+    <Compile Include="lib\werkzeug\contrib\wrappers.py" />
+    <Compile Include="lib\werkzeug\contrib\__init__.py" />
+    <Compile Include="lib\werkzeug\datastructures.py" />
+    <Compile Include="lib\werkzeug\debug\console.py" />
+    <Compile Include="lib\werkzeug\debug\repr.py" />
+    <Compile Include="lib\werkzeug\debug\tbtools.py" />
+    <Compile Include="lib\werkzeug\debug\__init__.py" />
+    <Compile Include="lib\werkzeug\exceptions.py" />
+    <Compile Include="lib\werkzeug\filesystem.py" />
+    <Compile Include="lib\werkzeug\formparser.py" />
+    <Compile Include="lib\werkzeug\http.py" />
+    <Compile Include="lib\werkzeug\local.py" />
+    <Compile Include="lib\werkzeug\posixemulation.py" />
+    <Compile Include="lib\werkzeug\routing.py" />
+    <Compile Include="lib\werkzeug\script.py" />
+    <Compile Include="lib\werkzeug\security.py" />
+    <Compile Include="lib\werkzeug\serving.py" />
+    <Compile Include="lib\werkzeug\test.py" />
+    <Compile Include="lib\werkzeug\testapp.py" />
+    <Compile Include="lib\werkzeug\urls.py" />
+    <Compile Include="lib\werkzeug\useragents.py" />
+    <Compile Include="lib\werkzeug\utils.py" />
+    <Compile Include="lib\werkzeug\wrappers.py" />
+    <Compile Include="lib\werkzeug\wsgi.py" />
+    <Compile Include="lib\werkzeug\_compat.py" />
+    <Compile Include="lib\werkzeug\_internal.py" />
+    <Compile Include="lib\werkzeug\_reloader.py" />
+    <Compile Include="lib\werkzeug\__init__.py" />
+    <Compile Include="pydevd_startup.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="run.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="application\" />
+    <Folder Include="lib\" />
+    <Folder Include="lib\click\" />
+    <Folder Include="lib\flask\" />
+    <Folder Include="lib\flask\ext\" />
+    <Folder Include="lib\werkzeug\" />
+    <Folder Include="lib\werkzeug\contrib\" />
+    <Folder Include="lib\werkzeug\debug\" />
+    <Folder Include="lib\werkzeug\debug\shared\" />
+    <Folder Include="application\templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app.yaml" />
+    <Content Include="lib\click\core.pyc" />
+    <Content Include="lib\click\decorators.pyc" />
+    <Content Include="lib\click\exceptions.pyc" />
+    <Content Include="lib\click\formatting.pyc" />
+    <Content Include="lib\click\globals.pyc" />
+    <Content Include="lib\click\parser.pyc" />
+    <Content Include="lib\click\termui.pyc" />
+    <Content Include="lib\click\testing.pyc" />
+    <Content Include="lib\click\types.pyc" />
+    <Content Include="lib\click\utils.pyc" />
+    <Content Include="lib\click\_bashcomplete.pyc" />
+    <Content Include="lib\click\_compat.pyc" />
+    <Content Include="lib\click\_termui_impl.pyc" />
+    <Content Include="lib\click\_textwrap.pyc" />
+    <Content Include="lib\click\_unicodefun.pyc" />
+    <Content Include="lib\click\_winconsole.pyc" />
+    <Content Include="lib\click\__init__.pyc" />
+    <Content Include="lib\flask\app.pyc" />
+    <Content Include="lib\flask\blueprints.pyc" />
+    <Content Include="lib\flask\cli.pyc" />
+    <Content Include="lib\flask\config.pyc" />
+    <Content Include="lib\flask\ctx.pyc" />
+    <Content Include="lib\flask\debughelpers.pyc" />
+    <Content Include="lib\flask\exthook.pyc" />
+    <Content Include="lib\flask\ext\__init__.pyc" />
+    <Content Include="lib\flask\globals.pyc" />
+    <Content Include="lib\flask\helpers.pyc" />
+    <Content Include="lib\flask\json.pyc" />
+    <Content Include="lib\flask\logging.pyc" />
+    <Content Include="lib\flask\sessions.pyc" />
+    <Content Include="lib\flask\signals.pyc" />
+    <Content Include="lib\flask\templating.pyc" />
+    <Content Include="lib\flask\testing.pyc" />
+    <Content Include="lib\flask\views.pyc" />
+    <Content Include="lib\flask\wrappers.pyc" />
+    <Content Include="lib\flask\_compat.pyc" />
+    <Content Include="lib\flask\__init__.pyc" />
+    <Content Include="lib\flask\__main__.pyc" />
+    <Content Include="lib\itsdangerous.pyc" />
+    <Content Include="lib\werkzeug\contrib\atom.pyc" />
+    <Content Include="lib\werkzeug\contrib\cache.pyc" />
+    <Content Include="lib\werkzeug\contrib\fixers.pyc" />
+    <Content Include="lib\werkzeug\contrib\iterio.pyc" />
+    <Content Include="lib\werkzeug\contrib\jsrouting.pyc" />
+    <Content Include="lib\werkzeug\contrib\limiter.pyc" />
+    <Content Include="lib\werkzeug\contrib\lint.pyc" />
+    <Content Include="lib\werkzeug\contrib\profiler.pyc" />
+    <Content Include="lib\werkzeug\contrib\securecookie.pyc" />
+    <Content Include="lib\werkzeug\contrib\sessions.pyc" />
+    <Content Include="lib\werkzeug\contrib\testtools.pyc" />
+    <Content Include="lib\werkzeug\contrib\wrappers.pyc" />
+    <Content Include="lib\werkzeug\contrib\__init__.pyc" />
+    <Content Include="lib\werkzeug\datastructures.pyc" />
+    <Content Include="lib\werkzeug\debug\console.pyc" />
+    <Content Include="lib\werkzeug\debug\repr.pyc" />
+    <Content Include="lib\werkzeug\debug\shared\console.png" />
+    <Content Include="lib\werkzeug\debug\shared\debugger.js" />
+    <Content Include="lib\werkzeug\debug\shared\FONT_LICENSE" />
+    <Content Include="lib\werkzeug\debug\shared\jquery.js" />
+    <Content Include="lib\werkzeug\debug\shared\less.png" />
+    <Content Include="lib\werkzeug\debug\shared\more.png" />
+    <Content Include="lib\werkzeug\debug\shared\source.png" />
+    <Content Include="lib\werkzeug\debug\shared\style.css" />
+    <Content Include="lib\werkzeug\debug\shared\ubuntu.ttf" />
+    <Content Include="lib\werkzeug\debug\tbtools.pyc" />
+    <Content Include="lib\werkzeug\debug\__init__.pyc" />
+    <Content Include="lib\werkzeug\exceptions.pyc" />
+    <Content Include="lib\werkzeug\filesystem.pyc" />
+    <Content Include="lib\werkzeug\formparser.pyc" />
+    <Content Include="lib\werkzeug\http.pyc" />
+    <Content Include="lib\werkzeug\local.pyc" />
+    <Content Include="lib\werkzeug\posixemulation.pyc" />
+    <Content Include="lib\werkzeug\routing.pyc" />
+    <Content Include="lib\werkzeug\script.pyc" />
+    <Content Include="lib\werkzeug\security.pyc" />
+    <Content Include="lib\werkzeug\serving.pyc" />
+    <Content Include="lib\werkzeug\test.pyc" />
+    <Content Include="lib\werkzeug\testapp.pyc" />
+    <Content Include="lib\werkzeug\urls.pyc" />
+    <Content Include="lib\werkzeug\useragents.pyc" />
+    <Content Include="lib\werkzeug\utils.pyc" />
+    <Content Include="lib\werkzeug\wrappers.pyc" />
+    <Content Include="lib\werkzeug\wsgi.pyc" />
+    <Content Include="lib\werkzeug\_compat.pyc" />
+    <Content Include="lib\werkzeug\_internal.pyc" />
+    <Content Include="lib\werkzeug\_reloader.pyc" />
+    <Content Include="lib\werkzeug\__init__.pyc" />
+    <Content Include="application\templates\404.html" />
+    <Content Include="application\templates\500.html" />
+    <Content Include="application\templates\base.html" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
+  <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
